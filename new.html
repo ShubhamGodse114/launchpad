@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>LaunchPad | Start Your Project</title>
+
+  <!-- Bootstrap, Fonts, Icons, AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background: #0a76e3;
+    }
+    .hero-section {
+      height: 100vh;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .btn {
+      transition: all 0.3s ease-in-out;
+      border-radius: 50px;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .card {
+      border: none;
+      border-radius: 20px;
+      /* overflow: hidden; */
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease;
+    }
+    .card-title {
+      font-weight: 600;
+    }
+    .feature-icon {
+      font-size: 48px;
+      color: #6c5ce7;
+    }
+    .info-box {
+      background: linear-gradient(135deg, #dfe6e9, #b2bec3);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      border-radius: 15px;
+    }
+    .info-box i {
+      font-size: 36px;
+      color: #2d3436;
+    }
+    .social-icons a {
+      font-size: 20px;
+      margin: 0 10px;
+      color: #636e72;
+    }
+    .social-icons a:hover {
+      color: #6c5ce7;
+    }
+    .section-heading {
+      color: #2d3436;
+      font-weight: 700;
+    }
+    footer {
+      background: #dfe6e9;
+    }
+    .form-control, textarea {
+      border-radius: 12px;
+      border-color: #ced6e0;
+    }
+    .btn-primary {
+      background-color: #6c5ce7;
+      border-color: #6c5ce7;
+    }
+    .feature-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+    .feature-box:hover {
+      background-color: #f3f0ff;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>🚀 LaunchPad</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn-primary ms-3">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Empower Your Launch with <span class="text-warning">LaunchPad</span></h1>
+      <p class="lead mt-3">Turn your idea into a reality with modern tools, elegant templates, and insightful analytics.</p>
+      <div class="mt-4">
+        <a href="#features" class="btn btn-warning me-2">Explore Features</a>
+        <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5" id="features">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="zoom-in">
+        <h2 class="section-heading">Awesome Features</h2>
+        <p class="text-muted">Everything you need to launch quickly and grow confidently.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-box text-center">
+            <div class="feature-icon mb-3"><i class="fas fa-magic"></i></div>
+            <h5>Smart Tools</h5>
+            <p>Leverage AI-assisted automation and integrations for faster workflows.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-box text-center">
+            <div class="feature-icon mb-3"><i class="fas fa-bolt"></i></div>
+            <h5>Fast Setup</h5>
+            <p>Choose from pre-built templates to get started in minutes, not days.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-box text-center">
+            <div class="feature-icon mb-3"><i class="fas fa-chart-line"></i></div>
+            <h5>Growth Analytics</h5>
+            <p>Visualize trends and track KPIs with built-in dashboards and reports.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-5 bg-white" id="benefits">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="zoom-in">
+        <h2 class="section-heading">Why Choose LaunchPad?</h2>
+        <p class="text-muted">We don't just help you start — we help you thrive.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="feature-box">
+            <h5 class="mb-2"><i class="fas fa-user-shield me-2"></i>Secure by Design</h5>
+            <p>End-to-end encryption and regular audits ensure your data is protected at every step.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="feature-box">
+            <h5 class="mb-2"><i class="fas fa-headset me-2"></i>24/7 Support</h5>
+            <p>Our friendly and fast support team is available anytime, any day of the week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-5 bg-light" id="pricing">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="zoom-in">
+        <h2 class="section-heading">Choose Your Plan</h2>
+        <p class="text-muted">Flexible pricing for everyone—from solo creators to large teams.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Starter</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Free</h6>
+              <p class="card-text">Basic tools and templates for getting started quickly.</p>
+              <a href="#" class="btn btn-outline-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+          <div class="card text-center border-primary">
+            <div class="card-body">
+              <h5 class="card-title">Pro</h5>
+              <h6 class="card-subtitle mb-2 text-muted">$29/month</h6>
+              <p class="card-text">Advanced features and priority support for growing teams.</p>
+              <a href="#" class="btn btn-primary">Choose Pro</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Enterprise</h5>
+              <h6 class="card-subtitle mb-2 text-muted">$99/month</h6>
+              <p class="card-text">Full suite with dedicated support and custom integrations.</p>
+              <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-5" id="testimonials">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="zoom-in">
+        <h2 class="section-heading">What Our Users Say</h2>
+        <p class="text-muted">Real feedback from real users</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-right">
+          <blockquote class="blockquote">
+            <p>"LaunchPad helped us streamline our launch and scale faster than expected!"</p>
+            <footer class="blockquote-footer">Ayesha Khan, CEO at NovaWorks</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <blockquote class="blockquote">
+            <p>"Intuitive and reliable. A must-have for startups!"</p>
+            <footer class="blockquote-footer">Rahul Mehta, Product Manager</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5 bg-white" id="contact">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Get In Touch</h2>
+        <p class="text-muted">We'd love to hear from you. Contact us anytime.</p>
+      </div>
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <div class="info-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h5 class="mt-3">Our Office</h5>
+            <p>123 Innovation Way, TechCity, TC 456789</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box">
+            <i class="fas fa-phone"></i>
+            <h5 class="mt-3">Call Us</h5>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box">
+            <i class="fas fa-envelope"></i>
+            <h5 class="mt-3">Email</h5>
+            <p>support@launchpad.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Subject" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary px-4">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light border-top">
+    <div class="container">
+      <p class="mb-1 text-muted">&copy; 2025 LaunchPad. All rights reserved.</p>
+      <div class="social-icons mt-2">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
